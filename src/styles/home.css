@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Neumorphic styles for Home page */
+@layer components {
+  .neu-convex {
+    @apply bg-[#1a1b1e] shadow-[6px_6px_12px_#0d0e0f,_-6px_-6px_12px_#27282d] rounded-2xl;
+  }
+
+  .neu-concave {
+    @apply bg-[#1a1b1e] shadow-[inset_6px_6px_12px_#0d0e0f,_inset_-6px_-6px_12px_#27282d] rounded-2xl;
+  }
+
+  .neu-button {
+    @apply bg-[#1a1b1e] 
+           rounded-xl
+           shadow-[4px_4px_8px_#0d0e0f,_-4px_-4px_8px_#27282d] 
+           hover:shadow-[inset_4px_4px_8px_#0d0e0f,_inset_-4px_-4px_8px_#27282d]
+           active:scale-95
+           transition-all duration-200;
+  }
+
+  .neu-card {
+    @apply bg-[#1a1b1e] shadow-[8px_8px_16px_#0d0e0f,_-8px_-8px_16px_#27282d] rounded-2xl;
+  }
+}
+
+.pd-20 {
+    padding: 20px;
+}
